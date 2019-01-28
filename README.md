@@ -104,4 +104,6 @@ The following three methods are exposed to a template:
 | categories_for_page(page)   | Returns an Enumerable of Strings representing the category names |
 | pages_by_category           | Returns a Hash-like object with an Enumerable of Middleman pages for each key which is a String representing a category name (so you can write `pages_by_category["Reading"]`) |
 | category_path(category)     | Returns a path to the page describing the category |
+| category_names              | Returns a Enumerable of Strings representing ALL the category names |
 | category_name               | Not a method, but a variable injected into the `category.html` proxy |
+
