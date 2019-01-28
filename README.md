@@ -8,11 +8,16 @@ The key use case is for porting a blog from WordPress that defines both
 tags and categories. [WordPress says that tags should enumerate content
 details for a page, and categories should describe larger buckets for content.](https://en.support.wordpress.com/posts/categories-vs-tags/)
 
+## upstream
+
+ This project was originally forked from https://github.com/jgn/middleman-categories
+
+
 ## To use
 
 1. In your `Gemfile`, add the gem:
 
-        gem 'middleman-categories', git: 'https://github.com/jgn/middleman-categories.git'
+        gem 'middleman-categories', git: 'https://github.com/agathongroup/middleman-categories'
 
 2. In your `config.rb`, activate the extension:
 
@@ -48,6 +53,13 @@ this:
     `category_name` is injected into this template by the extension. The extension
     exposes `pages_by_category`, which acts like a hash, to give you access to an
     array of pages for each category name.
+
+    You also need to exclude the category.html from your build.
+
+    configure :build do
+        ...
+        ignore '/category.html'
+    end
 
     Note: If you are using the Middleman Blog extension, and you know that the
     page in question is a blog article, you might use the Middleman Blog helpers

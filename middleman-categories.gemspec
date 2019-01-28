@@ -3,11 +3,11 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "middleman-categories"
-  s.version     = "0.0.1"
+  s.version     = "0.0.3"
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["John G. Norman"]
-  s.email       = ["john@7fff.com"]
-  s.homepage    = "https://7fff.com"
+  s.authors     = ["John G. Norman", "Agathon"]
+  s.email       = ["john@7fff.com", "developers@agathongroup.com"]
+  s.homepage    = "https://github.com/agathongroup/middleman-categories"
   s.summary     = %q{Provides categories to Middleman}
   s.description = <<DESCRIPTION
 Provides categories to Middleman. This is especially useful for use with

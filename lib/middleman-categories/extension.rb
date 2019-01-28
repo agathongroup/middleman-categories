@@ -5,6 +5,8 @@ class Categories < ::Middleman::Extension
   expose_to_template :pages_by_category
   expose_to_template :category_path
   expose_to_config :proxy_categories
+  expose_to_template :category_names
+
 
   def initialize(app, options_hash={}, &block)
     super
@@ -15,7 +17,7 @@ class Categories < ::Middleman::Extension
   end
 
   def category_path(category_name)
-    "/category/#{category_name.parameterize}.html"
+    "/blog/category/#{category_name.parameterize}.html"
   end
 
   def category_names
